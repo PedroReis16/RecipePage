@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;1,400;1,500&family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap');
+@import url("./Inicio.css");
+@import url("./Tempo.css");
+@import url("./Passos.css");
+
+:root{
+    --preto:#000000;
+    --laranja:#F2994A;
+    --fonte-titulo: Playfair Display;
+    --fonte-texto: Montserrat;
+    --cinza:#BDBDBD;
+    --cinza2:#828282;
+    --cor-texto:#333333;
+    --cor-descricao:#4F4F4F;
+    --branco:#FFFFFF;
+}
+body{
+    margin: 3em 1em;
+    font-family: var(--fonte-texto),'sans-serif';
+    color: var(--cor-texto);
+}
+@media screen and (min-width:1440px){
+    body{
+        margin:4em 10em;
+        display: grid;
+        grid-template-columns: 70% 30%;
+        grid-template-areas: 
+            "cabecalho cabecalho"
+            "info tempo"
+        ;
+        column-gap: 3.5em;
+    }   
+}
+
+

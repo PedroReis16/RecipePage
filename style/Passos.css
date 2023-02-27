@@ -1,0 +1,115 @@
+
+/* Ingredientes */
+.Ingredientes{
+    margin: 1em 0;
+}
+.IngredientesTitulo{
+    font-size:18px ;
+    font-family: var(--fonte-titulo);
+    font-weight: 700;
+
+}
+.ParteTitulo{
+    margin: 1em 0;
+    font-size:18px;
+    font-style: italic;
+    font-family: var(--fonte-titulo);
+    font-weight: 400;
+}
+.materiaisItem{
+    font-size: 14px;
+    line-height: 25px;
+    font-weight:400 ;
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+.materiaisItem strong{
+    font-size: 14px;
+    line-height: 25px;
+    font-weight:700;
+}
+.materiaisItem::before{
+    font-family: "Material Symbols Outlined";
+    content: "\e835";
+    font-size: 20px;
+    color: var(--cinza2);
+    vertical-align: top;
+    margin-right: 4px;
+}
+.bolo{
+    margin:2em 0;
+}
+#notas{
+    font-family: var(--fonte-texto);
+    font-size: 14px;
+    font-weight: 500;
+    font-style: italic;
+}
+
+/* Instrucoes */
+
+.Instrucoes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.Passo{
+    display: flex;
+    margin: 0 0 1.5em 0;
+    vertical-align: top;
+}
+.Passo strong{
+    font-size: 16px;
+    line-height: 25px;
+    font-weight:700;
+}
+.PassoNumero{
+    padding: .5em;
+    border: 1px solid transparent;
+    border-radius: 16px;
+    background-color: var(--laranja);
+    color: var(--branco);
+    font-family: var(--fonte-titulo);
+    font-size: 24px;
+    font-weight: 700;
+    height: 36px;
+    text-align: center;
+}
+.PassoInstrucao{
+    margin:0 10px;
+    line-height: 24px;
+    font-weight: 400;
+}
+.InstrucoesTitulo{
+    margin: 0 0 18px 0;
+}
+
+@media screen and (min-width:1440px){
+    .Passos{
+        grid-area: info;
+    }
+    .IngredientesTitulo{
+        font-size: 36px;
+    }
+    .ParteTitulo{
+        font-size: 28px;
+    }
+    .materiaisItem,.materiaisItem strong{
+        font-size: 24px;
+    }
+    
+    #notas{
+        font-size: 24px;
+    }
+    .Passo,.Passo strong{
+        font-size: 24px;
+        text-align: justify;
+    }
+    .InstrucoesTitulo{
+        margin: 0 0 28px 0;
+    }
+    .PassoNumero{
+        padding: .5em;
+    }
+}

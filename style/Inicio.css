@@ -1,0 +1,42 @@
+/* Descrição Inicial */
+.cabecalho{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.titulo{
+    font-family: var(--fonte-titulo);
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--preto);
+}
+.descricao{
+    font-size: 12px;
+    font-family: var(--fonte-texto);
+    font-style: italic;
+    color:var(--cor-descricao) ;
+    font-weight: 500;
+    line-height: 14px;
+    margin: 1em 0 1em 1.9em
+
+}
+.fotoBolo{
+    border-radius: 12px;
+}
+
+@media screen and (min-width:1440px){
+    .cabecalho{
+        grid-area:cabecalho ;
+    }
+    .titulo{
+        font-size:48px;
+    }
+    .descricao{
+        margin:1em 8em 1em 1.5em;
+        font-size:24px;
+        line-height: 1.2em;
+    }
+    .fotoBolo{
+        margin: 0 0 3em 0;
+    }
+}
